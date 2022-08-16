@@ -1,1 +1,1 @@
-console.log("teste")
+let filme = document.getElementById('filme').value

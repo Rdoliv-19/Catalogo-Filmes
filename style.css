@@ -1,0 +1,35 @@
+body{ font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: url(/Imagens/Background.jpg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #filme{
+   padding: 5px;
+   border-radius: 5px;
+   width: 15%;
+   margin: 5px;
+  }
+
+  .botao{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: white;
+    background-color: red;
+    font-weight: bold; 
+    transition: 1s all;
+    margin-top: 15px;
+  }
+
+  .botao:hover{
+    transform: scale(1.2);
+  }
