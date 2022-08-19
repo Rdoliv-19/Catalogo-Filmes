@@ -53,3 +53,42 @@ body{ font-family: 'Roboto Mono', monospace;
     height: 250px;
     margin-right: 20px;
   }
+
+  @media screen and (max-width:480px){
+    .container-botoes{
+      display: flex;
+      flex-direction: column;
+    }
+
+    body{
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: black;
+    
+    }
+
+    .botao{
+      width: 50%;
+      padding: 5px;
+      font-size: 10px;
+      border-radius: 5px;
+      color: white;
+      background-color: red;
+      font-weight: bold; 
+      transition: 1s all;
+      margin: 15px 20px 0 0;
+    }
+
+    .container-botoes{
+      display: flex;
+      align-items: center;
+    }
+
+    #filme{
+      padding: 5px;
+      border-radius: 5px;
+      width: 50%;
+      margin: 5px;
+     }
+  }
