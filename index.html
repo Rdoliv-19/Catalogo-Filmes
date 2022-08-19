@@ -10,10 +10,17 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="page-title">Insira seu filme favorito</h1>
+        <h1>Insira seu filme favorito</h1>
         <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
-        <input type="text" id="filme" name="nome" placeholder="Insira o nome do filme">
+    </div>
+    <div class="container-botoes">
         <button onClick="adicionarFilme()" class="botao">Adicionar Filme</button>
+        <button onClick="limpaLista()" class="botao">Limpa lista</button>
+    </div>
+
+    <div id="listaFilmes" class="filme-adicionado">
+
+    </div>
 
     <script src="/main.js"></script>
 </body>

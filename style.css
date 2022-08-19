@@ -1,9 +1,11 @@
 body{ font-family: 'Roboto Mono', monospace;
-    opacity: 1;
     color: white;
     font-size: 25px;
     font-weight: bold;
-    background-image: url(/Imagens/Background.jpg);
+    background-image: url(/Imagens/cinema3.PNG);
+    background-repeat:no-repeat;
+    background-size: 100%;
+
 }
 
 .container {
@@ -11,6 +13,11 @@ body{ font-family: 'Roboto Mono', monospace;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .container-botoes{
+    display: flex;
+    justify-content: center;
   }
 
   #filme{
@@ -28,9 +35,21 @@ body{ font-family: 'Roboto Mono', monospace;
     background-color: red;
     font-weight: bold; 
     transition: 1s all;
-    margin-top: 15px;
+    margin: 15px 20px 0 0;
   }
 
   .botao:hover{
     transform: scale(1.2);
+  }
+
+  .filme-adicionado{
+    margin: 50px auto;
+    width: 940px;
+      
+  }
+
+  .filme-adicionado img{
+    width: 200px;
+    height: 250px;
+    margin-right: 20px;
   }

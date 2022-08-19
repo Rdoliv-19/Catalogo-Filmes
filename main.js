@@ -2,8 +2,8 @@
 function adicionarFilme() {
 let filme = document.getElementById('filme').value
 
-if(filmeFavorito.endsWith(".jpg")){
-    listaFilmesnaTela(filmeFavorito)
+if(filme.endsWith(".jpg")){
+    listaFilmesnaTela(filme)
    } else{
     console.error("Endereço de filme inválido")
   }
@@ -11,8 +11,15 @@ if(filmeFavorito.endsWith(".jpg")){
 }
 
 function listaFilmesnaTela(filme){
-  var elementoFilmeFavorito = "<img src="  + filme + ">";
-  var elementoListaFilmes = document.getElementById("listaFilmes");
-   elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML+          elementoFilmeFavorito;
+  let elementoFilmeFavorito = "<img src="  + filme + ">";
+  let elementoListaFilmes = document.getElementById("listaFilmes");
+   elementoListaFilmes.innerHTML = elementoListaFilmes.innerHTML + elementoFilmeFavorito;
   
 }
+
+function limpaLista(){
+  let elementoFilmeFavorito = "<img src="  + filme + ">";
+  let elementoListaFilmes = document.getElementById("listaFilmes");
+   elementoListaFilmes.innerHTML = ""
+}
+
