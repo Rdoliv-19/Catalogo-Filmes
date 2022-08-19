@@ -5,7 +5,7 @@ let filme = document.getElementById('filme').value
 if(filme.endsWith(".jpg")){
     listaFilmesnaTela(filme)
    } else{
-    console.error("Endereço de filme inválido")
+    alert("Endereço de filme inválido")
   }
     document.getElementById("filme").value = ""
 }
